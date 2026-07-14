@@ -1,0 +1,234 @@
+<style>
+  :root {
+    color-scheme: dark;
+    color: #0f172a;
+    background: #f7fbff;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f7fbff;
+  }
+  .page {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 32px 20px 48px;
+  }
+  .hero {
+    background: linear-gradient(90deg, #0c2340 0%, #124b73 100%);
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 44px 28px;
+    margin-bottom: 32px;
+  }
+  .hero .title {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.05;
+  }
+  .hero .subtitle {
+    max-width: 760px;
+    margin: 0;
+    font-size: 1rem;
+    color: #dfe8f2;
+    line-height: 1.8;
+  }
+  .hero .meta {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: #c2d4e5;
+  }
+  .section {
+    margin-bottom: 32px;
+  }
+  .section-card {
+    background: #ffffff;
+    border: 1px solid #e2ecf6;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 16px 50px rgba(12, 35, 68, 0.08);
+  }
+  .section-card h2,
+  .section-card h3 {
+    margin-top: 0;
+    color: #102a40;
+  }
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .list {
+    margin: 0;
+    padding-left: 18px;
+    color: #334155;
+    line-height: 1.85;
+  }
+  .feature-list {
+    list-style: decimal inside;
+  }
+  .screenshot-pair {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  figure {
+    margin: 0;
+    text-align: center;
+  }
+  figure img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #d1dae7;
+    display: block;
+  }
+  figcaption {
+    margin-top: 10px;
+    color: #334155;
+    font-size: 0.95rem;
+  }
+  .footer {
+    padding: 24px 0 12px;
+    text-align: center;
+    color: #475569;
+    font-size: 0.95rem;
+  }
+  .footer a {
+    color: #0c4a6e;
+    text-decoration: none;
+  }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 8px;
+    color: #64748b;
+  }
+  @media (max-width: 840px) {
+    .grid-2,
+    .grid-3,
+    .screenshot-pair {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="page">
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="title">Remove “Powered by Odoo”</h1>
+      <p class="subtitle">A lightweight Odoo add-on that removes Odoo branding from login, portal, website footer and POS receipt output while keeping your installation clean and easy to maintain.</p>
+      <p class="meta">Community edition only. No theme overrides required.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-card">
+        <h2>What this module removes</h2>
+        <ul class="list">
+          <li>“Powered by Odoo”, “Manage Databases” and database selector links from login and password reset pages.</li>
+          <li>“Powered by Odoo” branding in the customer portal and website footer.</li>
+          <li>“Powered by Odoo” footer text from printed and emailed POS receipts.</li>
+          <li>No changes to theme templates required.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card">
+        <h2>Before / After examples</h2>
+        <div class="screenshot-pair">
+          <figure>
+            <img src="login_before.png" alt="Login before">
+            <figcaption>Login — Before</figcaption>
+          </figure>
+          <figure>
+            <img src="login_after.png" alt="Login after">
+            <figcaption>Login — After</figcaption>
+          </figure>
+        </div>
+        <div class="screenshot-pair" style="margin-top: 22px;">
+          <figure>
+            <img src="password_reset_before.png" alt="Password reset before">
+            <figcaption>Password Reset — Before</figcaption>
+          </figure>
+          <figure>
+            <img src="password_reset_after.png" alt="Password reset after">
+            <figcaption>Password Reset — After</figcaption>
+          </figure>
+        </div>
+        <div class="screenshot-pair" style="margin-top: 22px;">
+          <figure>
+            <img src="website_footer_before.png" alt="Website Footer before">
+            <figcaption>Website Footer — Before</figcaption>
+          </figure>
+          <figure>
+            <img src="website_footer_after.png" alt="Website Footer after">
+            <figcaption>Website Footer — After</figcaption>
+          </figure>
+        </div>
+        <div class="screenshot-pair" style="margin-top: 22px;">
+          <figure>
+            <img src="customer_portal_before.png" alt="Customer Portal before">
+            <figcaption>Customer Portal — Before</figcaption>
+          </figure>
+          <figure>
+            <img src="customer_portal_after.png" alt="Customer Portal after">
+            <figcaption>Customer Portal — After</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card">
+        <h2>POS Receipt cleanup</h2>
+        <p>Keep customer receipts clean by removing the extra Odoo footer line from printed and emailed POS receipts.</p>
+        <div class="screenshot-pair" style="margin-top: 20px;">
+          <figure>
+            <img src="POS_before.png" alt="POS receipt before">
+            <figcaption>POS receipt — Before</figcaption>
+          </figure>
+          <figure>
+            <img src="POS_after.png" alt="POS receipt after">
+            <figcaption>POS receipt — After</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card">
+        <h2>Features</h2>
+        <ol class="feature-list">
+          <li>Remove Odoo branding from login, portal, website footer and POS receipts.</li>
+          <li>Works without editing your theme templates.</li>
+          <li>Simple uninstall behavior with no residual assets.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-card">
+        <h2>Installation notes</h2>
+        <p>Install like any standard Odoo module. After installation, clear browser cache and restart the Odoo server so the updated templates take effect.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>Need help or want support?</div>
+    <div class="contact-row">
+      <span>Support: <a href="mailto:etreginwow@gmail.com">etreginwow@gmail.com</a></span>
+      <span>Module: dt_remove_powered_by_odoo</span>
+    </div>
+  </footer>
+</div>

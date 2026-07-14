@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Remove the brand promotion block from website/portal footers -->
+    <template id="dt_remove_powered_by_brand_promotion" inherit_id="web.brand_promotion" name="Remove Powered By - Brand Promotion">
+        <xpath expr="//div[contains(@class, 'o_brand_promotion')]" position="replace"/>
+    </template>
+</odoo>

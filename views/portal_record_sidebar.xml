@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Remove the "Powered by Odoo" block from the portal record sidebar -->
+    <template id="dt_remove_powered_by_portal_sidebar" inherit_id="portal.portal_record_sidebar" name="Remove Powered By - Portal Sidebar">
+        <xpath expr="//div[contains(@class, 'text-muted') and contains(., 'Powered by')]" position="replace"/>
+    </template>
+</odoo>

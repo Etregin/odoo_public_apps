@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Replace the entire last div inside card-body on the login page.
+        This removes in one shot:
+          - "Powered by Odoo" link
+          - "Manage Databases" link
+          - Database selector
+    -->
+    <template id="dt_remove_powered_by_login_layout" inherit_id="web.login_layout" name="Remove Powered By - Login Layout">
+        <xpath expr="//div[@class='card-body']//div[last()]" position="replace">
+            <div class="text-center small mt-4 pt-3 login--footer" t-if="not disable_footer">
+            </div>
+        </xpath>
+    </template>
+</odoo>
