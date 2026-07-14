@@ -21,6 +21,7 @@
     """,
     'author': 'Etregin',
     'company': 'Double Troubleshooting',
+    "support": "etreginwow@gmail.com",
     'category': 'Tools',
     'sequence': 10,
     'depends': ['portal','point_of_sale'],
@@ -39,4 +40,6 @@
     'application': True,
     'auto_install': False,
     'license': 'OPL-1',
+    "price": 0.00,
+    "currency": "USD",
 }
